@@ -2,11 +2,5 @@
 __pycache__/
 資料集準備/
 
-# Uploaded files (user uploads)
-static/uploads/
-
-# Model weights / checkpoints
-*.pth
-
 evaluate_val.py
 test.py
