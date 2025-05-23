@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>貓咪還是狗？</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    img.preview {
+      max-width: 300px;
+      margin-top: 20px;
+      display: block;
+    }
+    .button-group {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>上傳小動物圖片</h1>
+  <form action="/predict" method="post" enctype="multipart/form-data">
+    <p>僅限 JPG/PNG 檔案，大小限 2MB 以下</p>
+    <input type="file" name="file" accept="image/*" required>
+    <div class="button-group">
+      <button type="submit">分類</button>
+      <a href="/" style="margin-left: 10px;">
+        <button type="button">清空</button>
+      </a>
+    </div>
+  </form>
+
+  {% if image_url %}
+    <img class="preview" src="{{ image_url }}" alt="上傳圖片預覽">
+  {% endif %}
+
+  {% if result %}
+    <h2>{{ result }}</h2>
+  {% endif %}
+</body>
+</html>
