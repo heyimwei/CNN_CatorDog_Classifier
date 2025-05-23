@@ -36,7 +36,7 @@ def predict():
             result = clf.predict(f)
 
         image_url = url_for('static', filename='uploads/' + unique_name)
-        return render_template('index.html', result=f'預測結果：{result}', image_url=image_url)
+        return render_template('index.html', result=f'分類結果：{result}', image_url=image_url)
 
     except ValueError as ve:
         return render_template('index.html', result=f'錯誤：{ve}')

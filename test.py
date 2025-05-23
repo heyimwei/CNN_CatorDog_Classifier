@@ -26,7 +26,6 @@ def predict(image_path):
         idx    = logits.argmax(dim=1).item()
     return class_names[idx]
 
-# 測試用圖片路徑
-print(predict('data/val/cats/cat.4013.jpg'))
-print(predict('data/val/cats/cat.4021.jpg'))
-print(predict('data/val/cats/cat.4017.jpg'))
+# # 測試用圖片路徑
+# print(predict('data/val/cats/cat.4013.jpg'))
+# print(predict('data/val/dogs/dog.4021.jpg'))

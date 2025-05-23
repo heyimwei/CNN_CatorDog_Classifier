@@ -2,45 +2,10 @@
 __pycache__/
 資料集準備/
 
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.so
-
-# Virtual environment
-env/
-ENV/
-venv/
-.venv/
-*.env
-
-# Flask instance folders
-instance/
-*.db
-
 # Uploaded files (user uploads)
 static/uploads/
 
 # Model weights / checkpoints
 *.pth
-*.pt
 
-# Log files
-*.log
-nohup.out
-
-# IDE / editor files
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
+evaluate_val.py
