@@ -48,4 +48,6 @@ def handle_file_too_large(e):
     return render_template('index.html', result='錯誤：檔案過大（上限 2MB）'), 413
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port)
+
