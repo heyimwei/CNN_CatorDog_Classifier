@@ -1,3 +1,8 @@
+.kaggle/
+__pycache__/
+資料集準備/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
